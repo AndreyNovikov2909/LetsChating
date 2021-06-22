@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Y1-2D-paw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Room Login View Controller-->
+        <scene sceneID="6vL-e5-yvW">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Y1-2D-paw" customClass="ChatRoomLoginViewController" customModule="ChatRoomLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rm7-ko-5gB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LetsChatting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-ZK-O9e">
+                                <rect key="frame" x="20" y="84" width="374" height="35"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter following details and join the comunity chat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ek-A2-2pi">
+                                <rect key="frame" x="20" y="135" width="374" height="42"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOA-Xt-gHj">
+                                <rect key="frame" x="107" y="207" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Eh7-Dd-HFC"/>
+                                    <constraint firstAttribute="width" constant="200" id="Qch-jv-pvc"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="N71-kx-ILt">
+                                <rect key="frame" x="20" y="432" width="374" height="63"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSs-L4-9hb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wms-7U-XWe">
+                                        <rect key="frame" x="0.0" y="39.5" width="374" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW0-UK-qP3">
+                                <rect key="frame" x="200" y="799" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-UP-0HW">
+                                <rect key="frame" x="192" y="798" width="30" height="34"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TPh-oC-kHp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TPh-oC-kHp" firstAttribute="trailing" secondItem="N71-kx-ILt" secondAttribute="trailing" constant="20" id="5gs-Mw-2m1"/>
+                            <constraint firstItem="aTR-ZK-O9e" firstAttribute="top" secondItem="TPh-oC-kHp" secondAttribute="top" constant="40" id="5qO-WC-sxM"/>
+                            <constraint firstItem="N71-kx-ILt" firstAttribute="leading" secondItem="TPh-oC-kHp" secondAttribute="leading" constant="20" id="B5n-lA-bfi"/>
+                            <constraint firstItem="TdS-UP-0HW" firstAttribute="centerX" secondItem="TPh-oC-kHp" secondAttribute="centerX" id="CEX-nB-Zdp"/>
+                            <constraint firstItem="TPh-oC-kHp" firstAttribute="bottom" secondItem="TdS-UP-0HW" secondAttribute="bottom" constant="30" id="Lfj-Oh-Cq1"/>
+                            <constraint firstItem="aTR-ZK-O9e" firstAttribute="leading" secondItem="TPh-oC-kHp" secondAttribute="leading" constant="20" id="SGs-lB-b14"/>
+                            <constraint firstItem="4Ek-A2-2pi" firstAttribute="leading" secondItem="Rm7-ko-5gB" secondAttribute="leading" constant="20" id="TKj-gR-Xgr"/>
+                            <constraint firstItem="TPh-oC-kHp" firstAttribute="trailing" secondItem="aTR-ZK-O9e" secondAttribute="trailing" constant="20" id="Tbf-JF-aVx"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ek-A2-2pi" secondAttribute="trailing" constant="20" id="UOi-8D-krX"/>
+                            <constraint firstItem="pOA-Xt-gHj" firstAttribute="centerX" secondItem="TPh-oC-kHp" secondAttribute="centerX" id="VqD-Ph-zHr"/>
+                            <constraint firstItem="N71-kx-ILt" firstAttribute="top" secondItem="pOA-Xt-gHj" secondAttribute="bottom" constant="25" id="pKR-Db-8vt"/>
+                            <constraint firstItem="4Ek-A2-2pi" firstAttribute="top" secondItem="aTR-ZK-O9e" secondAttribute="bottom" constant="16" id="qsn-n5-Dsu"/>
+                            <constraint firstItem="pOA-Xt-gHj" firstAttribute="top" secondItem="4Ek-A2-2pi" secondAttribute="bottom" constant="30" id="zw4-wA-XnT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="pOA-Xt-gHj" id="ycc-Fh-Fit"/>
+                        <outlet property="descriptionLabel" destination="4Ek-A2-2pi" id="f9S-3d-nIA"/>
+                        <outlet property="emailTextField" destination="Wms-7U-XWe" id="yqD-Rb-U7w"/>
+                        <outlet property="loginButton" destination="TdS-UP-0HW" id="cvP-c6-iGM"/>
+                        <outlet property="titleLabel" destination="aTR-ZK-O9e" id="D7q-Ub-s6r"/>
+                        <outlet property="usernameTextField" destination="XSs-L4-9hb" id="t0H-TR-XWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiY-He-Ing" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

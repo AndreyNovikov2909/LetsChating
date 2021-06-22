@@ -6,16 +6,21 @@
 //
 
 import UIKit
+import Landing
+import ChatRoomLogin
 
 public final class Builder {
     public static func build(withWindowScene windowScene: UIWindowScene) -> UIWindow {
         let window = Window(windowScene: windowScene)
-        let router = Router()
+        let router = Router(window: window, subModules: (
+            landingModule: Landing.Builder.build,
+            loginModule: ChatRoomLogin.Builder.build
+        ))
+        
         let presenter = Presenter(router: router)
         
         window.presenter = presenter
         
         return window
     }
-    
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0qF-Ry-psn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="GD3-hK-ruj">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0qF-Ry-psn" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ex-d5-nrh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vGy-Ps-9YC">
+                                <rect key="frame" x="157" y="69" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="q6J-Cl-Kme"/>
+                                    <constraint firstAttribute="width" constant="100" id="ryt-Ws-zmL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LetsChatting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGJ-Qw-ZOg">
+                                <rect key="frame" x="20" y="199" width="374" height="35"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="00z-8N-hic">
+                                <rect key="frame" x="20" y="264" width="374" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realtime messaging" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-1i-cFa">
+                                        <rect key="frame" x="79.5" y="0.0" width="215.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets chating fot free" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-aR-keM">
+                                        <rect key="frame" x="81" y="35.5" width="212.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaO-Tt-eGf">
+                                <rect key="frame" x="143" y="704" width="128" height="128"/>
+                                <state key="normal" image="start"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="0qF-Ry-psn" eventType="touchUpInside" id="Cso-gG-c9y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yji-fe-NYy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="00z-8N-hic" firstAttribute="leading" secondItem="Yji-fe-NYy" secondAttribute="leading" constant="20" id="0Wj-CX-rG5"/>
+                            <constraint firstItem="vGy-Ps-9YC" firstAttribute="centerX" secondItem="Yji-fe-NYy" secondAttribute="centerX" id="19h-mz-ofc"/>
+                            <constraint firstItem="vGy-Ps-9YC" firstAttribute="top" secondItem="Yji-fe-NYy" secondAttribute="top" constant="25" id="5ax-7a-nVW"/>
+                            <constraint firstItem="00z-8N-hic" firstAttribute="top" secondItem="CGJ-Qw-ZOg" secondAttribute="bottom" constant="30" id="AZY-Te-0rU"/>
+                            <constraint firstItem="Yji-fe-NYy" firstAttribute="trailing" secondItem="CGJ-Qw-ZOg" secondAttribute="trailing" constant="20" id="FTX-u7-P84"/>
+                            <constraint firstItem="Yji-fe-NYy" firstAttribute="bottom" secondItem="BaO-Tt-eGf" secondAttribute="bottom" constant="30" id="KMV-du-X8Q"/>
+                            <constraint firstItem="BaO-Tt-eGf" firstAttribute="centerX" secondItem="Yji-fe-NYy" secondAttribute="centerX" id="ZeJ-fB-hRw"/>
+                            <constraint firstItem="CGJ-Qw-ZOg" firstAttribute="leading" secondItem="Yji-fe-NYy" secondAttribute="leading" constant="20" id="k6A-k4-67j"/>
+                            <constraint firstItem="CGJ-Qw-ZOg" firstAttribute="top" secondItem="vGy-Ps-9YC" secondAttribute="bottom" constant="30" id="kHe-S1-FZA"/>
+                            <constraint firstItem="Yji-fe-NYy" firstAttribute="trailing" secondItem="00z-8N-hic" secondAttribute="trailing" constant="20" id="vpQ-Vq-QXy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applicationNameLabel" destination="CGJ-Qw-ZOg" id="fPa-tF-dYE"/>
+                        <outlet property="descriptionLabel" destination="TPu-aR-keM" id="SYp-CY-rMW"/>
+                        <outlet property="logoImageView" destination="vGy-Ps-9YC" id="Ay6-zL-hB1"/>
+                        <outlet property="startButton" destination="BaO-Tt-eGf" id="DeW-Yi-byu"/>
+                        <outlet property="subtitleLabel" destination="5g7-1i-cFa" id="QTl-he-987"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1W-gM-tJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="162.5" height="162.5"/>
+        <image name="start" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

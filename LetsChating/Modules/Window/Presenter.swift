@@ -16,11 +16,21 @@ class Presenter {
     
     init(router: Routing) {
         self.router = router
+        
+        process()
     }
 }
 
 // MARK: - Presentation
 
 extension Presenter: Presentation {
-    
+}
+
+
+// MARK: - Process
+
+private extension Presenter {
+    func process() {
+        router.routeToLanding()
+    }
 }
