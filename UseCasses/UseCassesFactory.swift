@@ -9,6 +9,7 @@ import Foundation
 import ApplicationService
 
 public class UseCassesFactory {
-    private static let chatRoomWebSocketService = ChatRoomWebSocketService()
+    private static let deploydURL = URL(string: "")!
+    private static let chatRoomWebSocketService = ChatRoomWebSocketService(url: deploydURL)
     public static let accountInteractor: AccountInteractor = AccountInteractor(chatRoomService: chatRoomWebSocketService)
 }
